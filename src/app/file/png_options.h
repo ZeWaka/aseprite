@@ -49,6 +49,10 @@ namespace app {
       return m_Text.empty() && m_userChunks.empty();
     }
 
+    void clearMetadata() {
+      m_Text.clear();
+    }
+
     const Text& text() const { return m_Text; }
     const Chunks& chunks() const { return m_userChunks; }
 

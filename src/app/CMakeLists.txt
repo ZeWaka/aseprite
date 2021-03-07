@@ -445,6 +445,7 @@ add_library(app-lib
   cmd/remove_cel.cpp
   cmd/remove_frame.cpp
   cmd/remove_layer.cpp
+  cmd/remove_metadata.cpp
   cmd/remove_palette.cpp
   cmd/remove_slice.cpp
   cmd/remove_tag.cpp

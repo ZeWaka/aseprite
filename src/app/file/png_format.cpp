@@ -55,7 +55,8 @@ class PngFormat : public FileFormat {
       FILE_SUPPORT_GRAYA |
       FILE_SUPPORT_INDEXED |
       FILE_SUPPORT_SEQUENCES |
-      FILE_SUPPORT_PALETTE_WITH_ALPHA;
+      FILE_SUPPORT_PALETTE_WITH_ALPHA |
+      FILE_SUPPORT_METADATA;
   }
 
   bool onLoad(FileOp* fop) override;

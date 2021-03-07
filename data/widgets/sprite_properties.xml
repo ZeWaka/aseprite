@@ -21,23 +21,28 @@
 
       <label text="@.transparent_color" />
       <hbox>
-	<hbox id="transparent_color_placeholder" />
+        <hbox id="transparent_color_placeholder" />
       </hbox>
 
       <label text="@.pixel_ratio" />
       <combobox id="pixel_ratio" cell_align="horizontal">
-	<listitem text="@.square_pixels" value="1:1" />
-	<listitem text="@.double_wide" value="2:1" />
-	<listitem text="@.double_high" value="1:2" />
+        <listitem text="@.square_pixels" value="1:1" />
+        <listitem text="@.double_wide" value="2:1" />
+        <listitem text="@.double_high" value="1:2" />
       </combobox>
 
       <label text="@.color_profile" />
       <hbox>
-	<combobox id="color_profile" cell_align="horizontal" expansive="true"></combobox>
+        <combobox id="color_profile" cell_align="horizontal" expansive="true"></combobox>
         <hbox homogeneous="true">
           <button id="assign_color_profile" text="@.assign_color_profile">Assign</button>
           <button id="convert_color_profile" text="@.convert_color_profile">Convert</button>
-	</hbox>
+        </hbox>
+      </hbox>
+
+      <label text="@.metadata" />
+      <hbox>
+        <button id="remove_metadata" text="@.metadata_remove">Clear</button>
       </hbox>
 
     </grid>
