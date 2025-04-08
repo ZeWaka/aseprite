@@ -109,3 +109,10 @@ jobs:
         export ASEPRITE=$PWD/build/bin/aseprite
         cd tests
         $XVFB bash run-tests.sh
+    - name: Upload Windows Executable
+      if: runner.os == 'Windows'
+      uses: actions/upload-artifact@v4
+      with:
+        name: aseprite-${{ matrix.build_type }}-${{ matrix.ui }}-${{ matrix.scripting }}
+        path: build/bin/aseprite.exe
+        if-no-files-found: error
