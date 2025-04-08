@@ -119,5 +119,5 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: aseprite-${{ matrix.build_type }}-${{ matrix.ui }}-${{ matrix.scripting }}
-        path: build/bin/
+        path: build/
         if-no-files-found: error
